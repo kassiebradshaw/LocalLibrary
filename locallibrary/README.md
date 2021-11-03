@@ -65,3 +65,24 @@ All the configuration required to include the admin application in your website 
 After registering the models we'll show how to create a new "superuser", login to the site, and create some books, authors, book instances, and genres. These will be useful for testing the views and templates we'll start creating in the next tutorial.
 
 ---
+
+## [Part 5: Creating our home page](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Home_page)
+
+Date: *11-02-2021*
+
+* Prerequisites: Read the [Django Introduction](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction). Complete previous tutorial topics (including [Django Tutorial Part 4: Django admin site](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Admin_site))
+* Objective: Learn to create simple url maps and views (where no data is encoded in the URL), get data from models, and create templates.
+
+**Overview**:
+
+After we defined our models and created some initial library records to work with, it's time to write the code that presents that information to users. The first thing we need to do is determine what information we want to display in our pages, and define the URLs to use for returning those resources. Then we'll create a URL mapper, views, and templates to display the pages.
+
+The following diagram describes the main data flow, and the components required when handling HTTP requests and responses. As we already implemented the model, the main components we'll create are:
+
+URL mappers to forward the supported URLs (and any information encoded in the URLs) to the appropriate view functions.
+View functions to get the requested data from the models, create HTML pages that display the data, and return the pages to the user to view in the browser.
+Templates to use when rendering data in the views.
+
+![Overview Diagram](assets/django-tutorial-part-5-overview.png)
+
+As you'll see in the next section, we have 5 pages to display, which is too much information to document in a single article. Therefore, this article will focus on how to implement the home page, and we'll cover the other pages in a subsequent article. This should give you a good end-to-end understanding of how URL mappers, views, and models work in practice.
