@@ -8,8 +8,11 @@ Started: *11-02-2021*
 
 Date Started: *11-02-2021*
 
-* Prerequisites:
-* Objective:
+|||
+| --- | --- |
+| **Prerequisites:** | --- |
+| **Objective:** | --- |
+|
 
 **Overview**:
 
@@ -21,8 +24,11 @@ This article shows how you can create a "skeleton" website, which you can then p
 
 Date: *11-02-2021*
 
-* Prerequisites: Django Tutorial Part2: Creating a skeleton website
-* Objective: To be able to design and create your own models, choosing fields appropriately
+|||
+| --- | --- |
+| **Prerequisites:** | Django Tutorial Part2: Creating a skeleton website |
+| **Objective:** | To be able to design and create your own models, choosing fields appropriately |
+|
 
 **Overview**:
 
@@ -53,8 +59,11 @@ This tutorial shows how to define and access the models for the LocalLibrary web
 
 Date: *11-02-2021*
 
-* Prerequisites: Django Tutorial Part3: Using models
-* Objective: To understand the benefits and limitations of the Django admin site, and use it to create some records for our models
+|||
+| --- | --- |
+| **Prerequisites:** | Django Tutorial Part3: Using models |
+| **Objective:** | To understand the benefits and limitations of the Django admin site, and use it to create some records for our models |
+|
 
 **Overview**:
 
@@ -68,10 +77,13 @@ After registering the models we'll show how to create a new "superuser", login t
 
 ## [Part 5: Creating our home page](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Home_page)
 
-Date: *11-02-2021*
+Date: *11-02-2021 to 11-04-2021*
 
-* Prerequisites: Read the [Django Introduction](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction). Complete previous tutorial topics (including [Django Tutorial Part 4: Django admin site](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Admin_site))
-* Objective: Learn to create simple url maps and views (where no data is encoded in the URL), get data from models, and create templates.
+|||
+| --- | --- |
+| **Prerequisites:** | Read the [Django Introduction](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction). Complete previous tutorial topics (including [Django Tutorial Part 4: Django admin site](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Admin_site)) |
+| **Objective:** | Learn to create simple url maps and views (where no data is encoded in the URL), get data from models, and create templates. |
+|
 
 **Overview**:
 
@@ -86,3 +98,31 @@ Templates to use when rendering data in the views.
 ![Overview Diagram](assets/django-tutorial-part-5-overview.png)
 
 As you'll see in the next section, we have 5 pages to display, which is too much information to document in a single article. Therefore, this article will focus on how to implement the home page, and we'll cover the other pages in a subsequent article. This should give you a good end-to-end understanding of how URL mappers, views, and models work in practice.
+
+---
+
+## [Part 6: Generic list and detail views](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Generic_views)
+
+Date: *11-04-2021*
+
+|||
+| --- | --- |
+| **Prerequisites:** | Complete all previous tutorial topics, including Django Tutorial Part 5 |
+| **Objective:** | To understand where and how to use generic class-based views, and how to extract patterns from URLS and pass the information to views. |
+|
+
+**Overview**:
+
+In this tutorial we're going to complete the first version of the LocalLibrary website by adding list and detail pages for books and authors (or to be more precise, we'll show you how to implement the book pages, and get you to create the author pages yourself!)
+
+The process is similar to creating the index page, which we showed in the previous tutorial. We'll still need to create URL maps, views, and templates. The main difference is that for the detail pages, we'll have the additional challenge of extracting information from patterns in the URL and passing it to the view. For these pages, we're going to demonstrate a completely different type of view: generic class-based list and detail views. These can significantly reduce the amount of view code needed, making them easier to write and maintain.
+
+The final part of the tutorial will demonstrate how to paginate your data when using generic class-based list views.
+
+---
+
+<!-- |||
+| --- | --- |
+| **Prerequisites:** | --- |
+| **Objective:** | --- |
+| -->
