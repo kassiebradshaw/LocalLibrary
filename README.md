@@ -135,6 +135,28 @@ The session framework lets you implement this sort of behavior, allowing you to 
 
 ---
 
+## [Part 8: User authentication and permissions](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Authentication)
+
+Date: *11-27-2021*
+
+|||
+| --- | --- |
+| **Prerequisites:** | Complete all previous tutorial topics, including Django Tutorial Part 6 |
+| **Objective:** | To understand how to set up and use user authentication and permissions |
+
+**Overview**:
+
+Django provides an authentication and authorization ("permission") system, built on top of the session framework discussed in Part 7, that allows you to verify user credentials and define what actions each user is allowed to perform. The framework includes built-in models for Users and Groups (a generic way of applying permissions to more than one user at a time), permissions/flags that designate whether a user may perform a task, forms and views for logging in users, and view tools for restricting content.
+
+*NOTE: According to Django, the authentication system aims to be very generic, and so does not provide some features provided in other web authentication systems. Solutions for som common problems are available as third-party packages. For example, throttling of login attempts and authentication against third parties (e.g. OAuth).*
+
+In this tutorial we'll show you how to enable user authentication in the LocalLibrary website, create your own login and logout pages, add permissions to your models, and control access to pages. We'll use the authentication/permissions to display lists of books that have been borrowed for both users and librarians.
+
+The authentication system is very flexible, and you can build up your URLs, forms, views, and templates from scratch if you like, just calling the provided API to log in the user. However, in this article, we're going to use Django's "stock" authentication views and forms for our login and logout pages. We'll still need to create some templates, but that's pretty easy.
+
+We'll also show how to create permissions, and check on login status and permissions in both views and templates.
+
+---
 <!-- |||
 | --- | --- |
 | **Prerequisites:** | --- |
