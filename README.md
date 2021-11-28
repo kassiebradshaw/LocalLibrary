@@ -12,7 +12,6 @@ Date Started: *11-02-2021*
 | --- | --- |
 | **Prerequisites:** | --- |
 | **Objective:** | --- |
-|
 
 **Overview**:
 
@@ -28,7 +27,6 @@ Date: *11-02-2021*
 | --- | --- |
 | **Prerequisites:** | Django Tutorial Part2: Creating a skeleton website |
 | **Objective:** | To be able to design and create your own models, choosing fields appropriately |
-|
 
 **Overview**:
 
@@ -63,7 +61,6 @@ Date: *11-02-2021*
 | --- | --- |
 | **Prerequisites:** | Django Tutorial Part3: Using models |
 | **Objective:** | To understand the benefits and limitations of the Django admin site, and use it to create some records for our models |
-|
 
 **Overview**:
 
@@ -83,7 +80,6 @@ Date: *11-02-2021 to 11-04-2021*
 | --- | --- |
 | **Prerequisites:** | Read the [Django Introduction](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction). Complete previous tutorial topics (including [Django Tutorial Part 4: Django admin site](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Admin_site)) |
 | **Objective:** | Learn to create simple url maps and views (where no data is encoded in the URL), get data from models, and create templates. |
-|
 
 **Overview**:
 
@@ -95,7 +91,7 @@ URL mappers to forward the supported URLs (and any information encoded in the UR
 View functions to get the requested data from the models, create HTML pages that display the data, and return the pages to the user to view in the browser.
 Templates to use when rendering data in the views.
 
-![Overview Diagram](assets/django-tutorial-part-5-overview.png)
+![Overview Diagram](locallibrary/assets/django-tutorial-part-5-overview.png)
 
 As you'll see in the next section, we have 5 pages to display, which is too much information to document in a single article. Therefore, this article will focus on how to implement the home page, and we'll cover the other pages in a subsequent article. This should give you a good end-to-end understanding of how URL mappers, views, and models work in practice.
 
@@ -109,7 +105,6 @@ Date: *11-04-2021 - 11-27-2021*
 | --- | --- |
 | **Prerequisites:** | Complete all previous tutorial topics, including Django Tutorial Part 5 |
 | **Objective:** | To understand where and how to use generic class-based views, and how to extract patterns from URLS and pass the information to views. |
-|
 
 **Overview**:
 
@@ -129,7 +124,6 @@ Date: *11-27-2021*
 | --- | --- |
 | **Prerequisites:** | Complete all previous tutorial topics, including Django Tutorial Part 6 |
 | **Objective:** | To understand how sessions are used. |
-|
 
 **Overview**:
 
@@ -144,5 +138,4 @@ The session framework lets you implement this sort of behavior, allowing you to 
 <!-- |||
 | --- | --- |
 | **Prerequisites:** | --- |
-| **Objective:** | --- |
-| -->
+| **Objective:** | --- | -->
