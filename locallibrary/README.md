@@ -103,7 +103,7 @@ As you'll see in the next section, we have 5 pages to display, which is too much
 
 ## [Part 6: Generic list and detail views](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Generic_views)
 
-Date: *11-04-2021*
+Date: *11-04-2021 - 11-27-2021*
 
 |||
 | --- | --- |
