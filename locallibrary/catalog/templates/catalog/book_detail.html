@@ -22,6 +22,10 @@
       {% endif %}
       <p><strong>Imprint:</strong> {{ copy.imprint }}</p>
       <p class="text-muted"><strong>Id:</strong> {{ copy.id }}</p>
+      {% if perms.catalog.can_mark_returned %}
+        <!-- We can mark a BookInstance as returned. -->
+        <!-- Perhaps add code to link to a "book return" view here. -->
+      {% endif %}
     {% endfor %}
   </div>
 {% endblock %}
