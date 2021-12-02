@@ -137,11 +137,11 @@ The session framework lets you implement this sort of behavior, allowing you to 
 
 ## [Part 8: User authentication and permissions](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Authentication)
 
-Date: *11-27-2021*
+Date: *11-27-2021 - 11-30-2021*
 
 |||
 | --- | --- |
-| **Prerequisites:** | Complete all previous tutorial topics, including Django Tutorial Part 6 |
+| **Prerequisites:** | Complete all previous tutorial topics, including Django Tutorial Part 7 |
 | **Objective:** | To understand how to set up and use user authentication and permissions |
 
 **Overview**:
@@ -157,7 +157,26 @@ The authentication system is very flexible, and you can build up your URLs, form
 We'll also show how to create permissions, and check on login status and permissions in both views and templates.
 
 ---
-<!-- |||
+
+## [Part 9: Working with forms](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Forms)
+
+Date: *11-30-2021*
+
+|||
 | --- | --- |
-| **Prerequisites:** | --- |
-| **Objective:** | --- | -->
+| **Prerequisites:** | Complete all previous tutorial topics, including Django Tutorial Part 8 |
+| **Objective:** | To understand how to write forms to get information from users and update the database. To understand how the generic class-based editing views can vastly simplify creating forms for working with a single model. |
+
+**Overview**:
+
+An HTML Form is a group of one or more fields/widgets on a web page, which can be used to collect information from users for submission to a server. Forms are a flexible mechanism for collecting user input because there are suitable widgets for entering many different types of data, including text boxes, checkboxes, radio buttons, date pickers and so on. Forms are also a relatively secure way of sharing data with the server, as they allow us to send data in POST requests with cross-site request forgery protection.
+
+While we haven't created any forms in this tutorial so far, we've already encountered them in the Django Admin site -- for example, the screenshot below shows a form for editing on of our Book models, comprised of a number of selection lists and text editors.
+
+![admin portal "add book" example](locallibrary/assets/admin_book_add.png)
+
+Working with forms can be complicated! Developers need to write HTML for the form, validate and properly sanitize entered data on the server (and possibly also in the browser), repost the form with error messages to inform users of any invalid fields, handle the data when it has successfully been submitted, and finally respond to the user in some way to indicate success. Django Forms take a lot of the work out of all these steps, by providing a framework that lets you define forms and their fields programmatically, and then use these objects to both generate the form HTML code and handle much of the validation and user interaction.
+
+In this tutorial, we're going to show you a few of the ways you can create and work with forms, and in particular, how the generic editing views can significantly reduce the amount of work you need to do to create forms to manipulate your models. Along the way, we'll extend our LocalLibrary application by adding a form to allow librarians to renew library books, and we'll create pages to create, edit and delete books and authors (reproducing a basic version of the form shown above for editing books).
+
+---
