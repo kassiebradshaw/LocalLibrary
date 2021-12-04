@@ -16,15 +16,31 @@
       {% block sidebar %}
         <ul class="sidebar-nav">
           <li><a href="{% url 'index' %}">Home</a></li>
-          <li><a href="{% url 'books' %}">All books</a></li>
-          <li><a href="{% url 'authors' %}">All authors</a></li>
+          <li><a href="{% url 'books' %}">All Books</a></li>
           {% if perms.catalog.can_mark_returned %}
+          <li>
+            <ul>
+              <li>
+                <a href="{% url 'book-create' %}">Add Book</a>
+              </li>
+            </ul>
+          </li>
+          {% endif %}
+          <li><a href="{% url 'authors' %}">All Authors</a></li>
+          {% if perms.catalog.can_mark_returned %}
+          <li>
+            <ul>
+              <li>
+                <a href="{% url 'author-create' %}">Add Author</a>
+              </li>
+            </ul>
+          </li>
             <li><a href="{% url 'all-borrowed' %}">All Borrowed Books</a></li>
           {% endif %}
           <br />
           {% if user.is_authenticated %}
             <li>User: {{ user.get_username }}</li>
-            <li><a href="{% url 'my-borrowed' %}">My Borrowed</a></li>
+            <li><a href="{% url 'my-borrowed' %}">My Borrowed Books</a></li>
             <li><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>
           {% else %}
             <li><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>
