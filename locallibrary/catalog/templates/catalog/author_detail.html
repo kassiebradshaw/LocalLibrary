@@ -12,4 +12,13 @@
         <p class="text-muted">{{ book.summary}}</p>
     {% endfor %} -->
   </div>
+
+  <button type="button">
+    <a href="{% url 'author-update' author.pk %}">Update This Author</a>
+  </button>
+
+  <button type="button">
+    <a href="{% url 'author-delete' author.pk %}">Delete This Author</a>
+  </button>
+
 {% endblock %}
