@@ -13,4 +13,8 @@
   {% else %}
     <p>There are no books in the library.</p>
   {% endif %}
+
+  <button type="button">
+    <a href="{% url 'book-create' %}">Add New Book</a>
+  </button>
 {% endblock %}
