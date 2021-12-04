@@ -13,4 +13,9 @@
   {% else %}
     <p>There are no authors at this time.</p>
   {% endif %}
+
+  <button type="button">
+    <a href="{% url 'author-create'%}">Add New Author</a>
+  </button>
+  
 {% endblock %}
