@@ -201,3 +201,27 @@ In addition, automated tests can act as the first real-world "user" of your code
 This tutorial shows how to write automated tests for Django, by adding a number of tests to the LocalLibrary website.
 
 ---
+
+## [Part 11: Deploying Django to production](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Deployment)
+
+Date: *12-08-2021*
+
+|||
+| --- | --- |
+| **Prerequisites:** | Complete all previous tutorial topics, including Django Tutorial Part 10 |
+| **Objective:** | To learn where and how you can deploy a Django app to production |
+
+**Overview**:
+
+Once your site is finished (or finished "enough" to start public testing) you're going to need to host it somewhere more public and accessible than your personal development computer.
+
+Up to now you've been working in a development environment, using the Django development web server to share your site to the local browser/network, and running your website with (insecure) development settings that expose debug and other private information. Before you can host a website externally you're first going to have to:
+
+* Make a few changes to your project settings.
+* Choose an environment for hosting the Django app.
+* Choose an environment for hosting any static files.
+* Set up a production-level infrastructure for serving your website.
+
+This tutorial provides some guidance on your options for choosing a hosting site, a brief overview of what you need to do in order to get your Django app ready for production, and a worked example of how to install the LocalLibrary website onto the Heroku cloud hosting service.
+
+---
