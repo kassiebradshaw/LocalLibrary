@@ -183,7 +183,7 @@ In this tutorial, we're going to show you a few of the ways you can create and w
 
 ## [Part 10: Testing a Django web application](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing)
 
-Date: *12-03-2021*
+Date: *12-03-2021 - 12-08-2021*
 
 |||
 | --- | --- |
