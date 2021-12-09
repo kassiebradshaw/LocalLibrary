@@ -160,7 +160,7 @@ We'll also show how to create permissions, and check on login status and permiss
 
 ## [Part 9: Working with forms](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Forms)
 
-Date: *11-30-2021*
+Date: *11-30-2021 - 12-03-2021*
 
 |||
 | --- | --- |
@@ -178,5 +178,26 @@ While we haven't created any forms in this tutorial so far, we've already encoun
 Working with forms can be complicated! Developers need to write HTML for the form, validate and properly sanitize entered data on the server (and possibly also in the browser), repost the form with error messages to inform users of any invalid fields, handle the data when it has successfully been submitted, and finally respond to the user in some way to indicate success. Django Forms take a lot of the work out of all these steps, by providing a framework that lets you define forms and their fields programmatically, and then use these objects to both generate the form HTML code and handle much of the validation and user interaction.
 
 In this tutorial, we're going to show you a few of the ways you can create and work with forms, and in particular, how the generic editing views can significantly reduce the amount of work you need to do to create forms to manipulate your models. Along the way, we'll extend our LocalLibrary application by adding a form to allow librarians to renew library books, and we'll create pages to create, edit and delete books and authors (reproducing a basic version of the form shown above for editing books).
+
+---
+
+## [Part 10: Testing a Django web application](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing)
+
+Date: *12-03-2021*
+
+|||
+| --- | --- |
+| **Prerequisites:** | Complete all previous tutorial topics, including Django Tutorial Part 9 |
+| **Objective:** | To understand how to write unit tests for Django-based websites |
+
+**Overview**:
+
+The Local Library currently has pages to display lists of all books and authors, detail views for Book and Author items, a page to renew BookInstances, and pages to create, update, and delete Author & Book items. Even with this relatively small site, manually navigating to each page and superficially checking that everything works as expected can take several minutes. As we make changes and grow the site, the time required to manually check that everything works properly will only grow. If we were to continue as we are, eventually we'd be spending most of our time testing, and very little time improving our code.
+
+Automated tests can really help with this problem! The obvious benefits are that they can be run much faster than manual tests, can test to a much lower level of detail, and test exactly the same functionality every time (human testers are nowhere near as reliable!) Because they are fast, automated tests can be executed more regularly, and if a test fails, they point to exactly where the code is not performing as expected.
+
+In addition, automated tests can act as the first real-world "user" of your code, forcing you to be rigourous about defining and documenting how your website should behave. Often they are the basis for your code examples and documentation. For these reasons, some software development processes start with test definition and implementation, after which the code is written to match the required behavior (e.g. test-driven and behavior-driven development).
+
+This tutorial shows how to write automated tests for Django, by adding a number of tests to the LocalLibrary website.
 
 ---
